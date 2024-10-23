@@ -1,5 +1,5 @@
 {
-  "name": "meu_movies",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,27 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.59.0",
-    "@types/react-query": "^1.2.9",
-    "axios": "^1.7.7",
-    "clsx": "^2.1.1",
-    "next": "14.2.14",
-    "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.3.0",
-    "sharp": "^0.33.5",
-    "swiper": "^11.1.14"
+    "next": "14.2.16"
   },
   "devDependencies": {
+    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10.4.20",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.14",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.14",
-    "typescript": "^5"
+    "eslint-config-next": "14.2.16"
   }
 }
