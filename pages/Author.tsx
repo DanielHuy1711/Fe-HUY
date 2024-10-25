@@ -1,5 +1,5 @@
-import React, { useState, ChangeEvent, FormEvent } from "react";
-import "./Auhor.css";
+import React, { useState} from "react";
+import "./author.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 interface FormData {
@@ -21,9 +21,7 @@ export default function Author() {
     type: "",
   });
 
-  // Giả lập việc lấy dữ liệu từ database (API call hoặc fetch từ server)
   useEffect(() => {
-    // Giả sử đây là dữ liệu lấy về từ database
     const fetchedData: FormData = {
       fullname: "Christenson",
       email: "Christenson@gmail.com",
@@ -39,7 +37,7 @@ export default function Author() {
     <div className="Author-page container d-flex justify-content-start align-items-start mt-5">
       <div className="Author-sidebar mt-2 p-3 col-md-3 text-center">
         <img
-          src="#"
+          src="/images/Author.jpg"
           alt="Profile"
           className="img-fluid rounded-circle mb-3"
           style={{ width: "150px", height: "150px" }}
@@ -78,7 +76,7 @@ export default function Author() {
             <p className="border rounded p-2 w-full">{formData.type}</p>
           </div>
 
-          <button className="btn btn-primary">Go back</button>
+          <button type="button" className="btn btn-primary">Go back</button>
         </div>
       </div>
     </div>
